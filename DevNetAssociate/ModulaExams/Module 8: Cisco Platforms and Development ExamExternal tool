@@ -1,0 +1,327 @@
+1
+Which language is used by the NETCONF protocol to encode both the configuration data and protocol messages?
+
+HTML
+
+JSON
+
+YAML
+
+XML
+The NETCONF protocol uses XML (Extensible Markup Language) to encode both the configuration data and protocol messages.
+
+
+
+
+
+Emmanuel Anyira
+2
+Which underlying technology makes it possible for Cisco Umbrella to prevent a user from accessing a blocked site?
+
+DHCP
+
+DNS
+
+HTTP and HTTPS
+
+Cisco Firewall
+Cisco Umbrella prevents a user from accessing a blocked site by leveraging the DNS (Domain Name System) protocol. When a user tries to access a website, Cisco Umbrella checks the domain name against its list of blocked domains. If the domain is on the list, the request is blocked and the user is redirected to a block page. If the domain is not on the list, the request is allowed and the user is able to access the site.
+
+
+
+
+
+Emmanuel Anyira
+3
+What does Cisco ISE do when it identifies a user or device accessing the network?
+
+It automatically and securely places the device and user into the right part of the network.
+
+It logs the access attempt.
+
+It processes the originating IP address according to a whitelist.
+
+It quarantines the device and user until an administrator releases the quarantine.
+Navigation Bar
+When Cisco ISE (Identity Services Engine) identifies a user or device accessing the network, it can automatically and securely place the device and user into the right part of the network based on pre-configured policies. Cisco ISE can also log the access attempt for audit purposes. Additionally, if the device or user is found to be in violation of security policies, Cisco ISE can take action such as quarantining the device and user until an administrator releases the quarantine.
+
+
+
+
+
+Emmanuel Anyira
+4
+How are service profiles used by Cisco UCS Manager?
+
+Cisco UCS Manager uses service profiles to assign a unique identity to the server associated with each profile.
+
+Cisco UCS Manager uses service profiles as templates to provision policies to multiple versions of the same server.
+
+Cisco UCS Manager saves service profiles to recover servers in case of data loss.
+
+Cisco USC Manager uses an assigned service profile to each instance to define network policy.
+Navigation Bar
+Cisco UCS Manager uses service profiles as templates to provision policies to multiple versions of the same server. A service profile contains the server's identity, policies for configuring the server's hardware and firmware, and the boot policy. By using service profiles, administrators can easily and consistently deploy servers with the correct configuration and policies, reducing the risk of errors and improving the efficiency of server deployment. Additionally, if a server needs to be replaced or upgraded, the same service profile can be applied to the new server, ensuring that it is configured correctly.
+
+
+
+
+
+Emmanuel Anyira
+5
+Why does the Meraki dashboard API return a 404 rather than a 403 code in response to a request with an invalid API key?
+
+The 404 return code prevents the system from indicating the existence of resources to unauthorized users.
+
+The 403 return code would indicate that there are no resources at that endpoint but the API key could be correct.
+
+The 403 return code would indicate that the client definitely has an invalid API key.
+
+The 404 return code determines whether unauthorized users will try again.
+Navigation Bar
+The Meraki dashboard API returns a 404 (Not Found) status code rather than a 403 (Forbidden) status code in response to a request with an invalid API key because the 404 status code prevents the system from indicating the existence of resources to unauthorized users. If a 403 status code were returned, an attacker could use that information to guess whether resources exist at that endpoint and continue to make requests until they found a valid endpoint, increasing the risk of a successful attack. By returning a 404 status code, the system masks whether the resource exists or not and reduces the risk of unauthorized access to resources.
+
+
+
+
+
+Emmanuel Anyira
+7
+What are two tasks a network administrator can perform with Cisco UCS Director? (Choose two.)
+
+Create, clone, and deploy service profiles and templates for all Cisco UCS servers and compute applications.
+
+Manage multiple Cisco UCS Manager appliances.
+
+Load-balance data traffic.
+
+Deploy and add capacity to converged infrastructures in a consistent and repeatable manner.
+
+Create a direct line of communication between Cisco and non-Cisco components.
+Two tasks a network administrator can perform with Cisco UCS Director are:
+
+Create, clone, and deploy service profiles and templates for all Cisco UCS servers and compute applications.
+Deploy and add capacity to converged infrastructures in a consistent and repeatable manner.
+Cisco UCS Director is a management and orchestration platform that simplifies the deployment, management, and automation of Cisco UCS infrastructure and other data center components. It provides a single pane of glass to manage multiple Cisco UCS Manager appliances, as well as non-Cisco components, allowing administrators to automate tasks, streamline workflows, and enforce policies consistently across the data center. Cisco UCS Director also enables the creation and management of service profiles and templates, making it easy to deploy and configure new infrastructure resources in a consistent and repeatable manner.
+
+
+
+
+
+Emmanuel Anyira
+8
+What are the three main capabilities provided by Cisco AMP? (Choose three.)
+
+annihilation
+
+prevention
+
+relaying
+
+detection
+
+redirection
+
+responses and automation
+Navigation Bar
+The three main capabilities provided by Cisco AMP (Advanced Malware Protection) are:
+
+Detection: AMP uses various techniques to detect known and unknown threats, including signature-based detection, behavioral analysis, machine learning, and threat intelligence.
+
+Prevention: AMP uses advanced techniques such as sandboxing, exploit prevention, and file reputation to prevent malware from executing and spreading in the network.
+
+Responses and Automation: AMP provides a range of responses and automation capabilities, such as threat quarantining, file trajectory, and retrospective security, to help security teams respond to threats quickly and efficiently.
+
+Therefore, the correct options are detection, prevention, and responses and automation.
+
+
+
+
+
+Emmanuel Anyira
+9
+Which function does the AXL interface provide for users?
+
+provisions Webex Devices and customizes each display
+
+updates network device configurations with a rollback mechanism
+
+looks up the top ten OWASP vulnerabilities and identifies which endpoints are vulnerable
+
+provisions and manages objects in the Unified Communication Management Administration Console
+Navigation Bar
+The AXL (Administrative XML) interface provides users with the ability to provision and manage objects in the Unified Communication Management Administration Console. The AXL interface is a SOAP-based API that allows applications to access and manipulate configuration data stored in the Cisco Unified Communications Manager (CUCM). Using the AXL interface, administrators can automate routine tasks, such as provisioning new users, updating phone configurations, and managing devices, thereby reducing the risk of errors and improving the efficiency of operations. Therefore, the correct option is "provisions and manages objects in the Unified Communication Management Administration Console."
+
+
+
+
+
+Emmanuel Anyira
+10
+What are two types of YANG models? (Choose two.)
+
+open model
+
+hybrid model
+
+private model
+
+native model
+
+vendor model
+The two types of YANG models are:
+
+Native model: A native model is a YANG model that is defined and maintained by a standards organization or an open-source community. Native models define standard data models for network devices, protocols, and services, and are intended to be interoperable across different vendor implementations.
+
+Vendor model: A vendor model is a YANG model that is developed and maintained by a network equipment vendor to define the data model for its own products and services. Vendor models can extend native models, provide additional functionality, or define proprietary data models specific to the vendor's products.
+
+Therefore, the correct options are "native model" and "vendor model."
+
+
+
+
+
+Emmanuel Anyira
+11
+Which three functions are provided by Cisco Finesse REST APIs? (Choose three.)
+
+They can be used to build a script to automate tasks.
+
+They can be used to build custom OpenSocial gadgets.
+
+They can be used to get the call history of an agent.
+
+They can be used to integrate into existing applications to add contact center functionality.
+
+They can be used to get termination call detail (TCD) reports.
+
+They can be used to build a fully functioning agent desktop.
+The three functions provided by Cisco Finesse REST APIs are:
+
+They can be used to build custom OpenSocial gadgets: Finesse APIs enable developers to build custom gadgets for Finesse desktops using OpenSocial API. OpenSocial gadgets can be used to display information from external systems, such as CRM or ticketing applications, or to provide custom functionality within the Finesse desktop.
+
+They can be used to integrate into existing applications to add contact center functionality: Finesse APIs allow developers to integrate contact center functionality into existing applications, such as CRM or ticketing systems. This enables agents to have a unified view of customer data and interactions, improving efficiency and customer service.
+
+They can be used to build a script to automate tasks: Finesse APIs can be used to automate routine tasks, such as logging in and out of Finesse, changing agent state, or initiating a call. This can help reduce errors, increase efficiency, and improve agent productivity.
+
+Therefore, the correct options are "they can be used to build custom OpenSocial gadgets", "they can be used to integrate into existing applications to add contact center functionality", and "they can be used to build a script to automate tasks."
+
+
+
+
+
+Emmanuel Anyira
+12
+What are two actions taken by Firepower for traffic control? (Choose two.)
+
+controlling which websites are available to the users on the network
+
+using security intelligence data to filter traffic, including IP addresses, address blocks, domain names, and URLs
+
+directing heavy data traffic to free servers
+
+load balancing during high-traffic time periods
+
+shutting down the network in the event of a DDOS attack
+Navigation Bar
+The two actions taken by Firepower for traffic control are:
+
+Using security intelligence data to filter traffic, including IP addresses, address blocks, domain names, and URLs: Firepower uses threat intelligence data to identify and block traffic from known malicious sources, preventing threats from entering the network.
+
+Load balancing during high-traffic time periods: Firepower can distribute network traffic across multiple servers to optimize performance and ensure availability during periods of high traffic. This can help prevent network congestion and downtime.
+
+Therefore, the correct options are "using security intelligence data to filter traffic, including IP addresses, address blocks, domain names, and URLs" and "load balancing during high-traffic time periods."
+
+
+
+
+
+Emmanuel Anyira
+13
+Which two benefits are provided by the Python-based WebEx Teams SDK? (Choose two.)
+
+It manages requests with pagination.
+
+It integrates with the Webex Devices API.
+
+It provides error reporting.
+
+It provides access to more API calls within Webex Teams.
+
+It is better supported than the Webex Teams APIs.
+Navigation Bar
+The two benefits provided by the Python-based WebEx Teams SDK are:
+
+It manages requests with pagination: When working with large amounts of data, the WebEx Teams API returns data in pages, and the SDK can handle these pages automatically, making it easier for developers to work with large data sets.
+
+It provides access to more API calls within Webex Teams: The WebEx Teams SDK provides a higher level of abstraction than the raw WebEx Teams APIs, which means that it is easier to use and provides access to more API calls, making it more powerful.
+
+Therefore, the correct options are "it manages requests with pagination" and "it provides access to more API calls within Webex Teams."
+
+
+
+
+
+Emmanuel Anyira
+14
+Which two statements describe the usage of Cisco Finesse JavaScript APIs? (Choose two.)
+
+They can be used to embed existing web pages into a custom gadget.
+
+They can be used to get the call history of an agent.
+
+They can be used to build custom gadgets to be placed into applications other than Finesse.
+
+They can be used to build a custom gadget for the agent state workflow.
+
+They can be used to build a fully functioning agent desktop.
+The two statements that describe the usage of Cisco Finesse JavaScript APIs are:
+
+They can be used to build custom gadgets to be placed into applications other than Finesse: The Finesse JavaScript APIs allow developers to create custom gadgets that can be embedded into other web applications, such as a CRM system, to provide contact center functionality within those applications.
+
+They can be used to build a custom gadget for the agent state workflow: The Finesse JavaScript APIs provide access to the agent state and workflow, allowing developers to create custom gadgets that can control the agent state and workflow, such as putting the agent on break or logging them out.
+
+Therefore, the correct options are "they can be used to build custom gadgets to be placed into applications other than Finesse" and "they can be used to build a custom gadget for the agent state workflow."
+
+
+
+
+
+Emmanuel Anyira
+15
+What are three primary YANG sources in Cisco NSO? (Choose three.)
+
+communication model
+
+mapping model
+
+data models from devices
+
+NSO data model
+
+configuration models
+
+YANG service models
+Navigation Bar
+That's correct! Well done.
+
+
+
+
+
+Emmanuel Anyira
+Choose three
+I apologize for the error in my previous message. Here are the correct answers:
+
+The three primary YANG sources in Cisco NSO are:
+
+NSO data model
+configuration models
+YANG service models
+I hope this helps!
+
+
+
+
+
+Regenerate response
