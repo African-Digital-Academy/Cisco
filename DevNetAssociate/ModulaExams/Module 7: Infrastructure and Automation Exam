@@ -1,0 +1,309 @@
+1
+What is an imperative procedure?
+
+A set of commands that require administrator privileges and can only be executed on a local system.
+
+An ordered sequence of commands that is used to reach a specific end state.
+
+A set of commands that is piped to a remote host and immediately executed.
+
+A set of commands that examines a target and only performs the tasks needed to achieve the desired state.
+Navigation Bar
+An imperative procedure is an ordered sequence of commands or instructions that must be followed in a specific way to achieve a particular outcome or end state. It is a type of procedure that provides step-by-step guidance on how to perform a task or achieve a specific result. Imperative procedures are commonly used in programming, system administration, and other technical fields to ensure that tasks are performed consistently and accurately. They may involve commands that require administrator privileges or are executed on a remote host, but these aspects are not inherent to the definition of an imperative procedure.
+
+
+
+
+
+Emmanuel Anyira
+2
+What is the default shell commonly used on macOS and Linux?
+
+csh
+
+tcsh
+
+Bash
+
+Bourne
+Navigation Bar
+The default shell commonly used on macOS and Linux is Bash (Bourne-again shell). It is a popular shell that provides a command-line interface for interacting with the operating system and running commands. While other shells such as csh and tcsh are also available, Bash is the most widely used and is the default shell on most Unix-like systems.
+
+
+
+
+
+Emmanuel Anyira
+3
+How is an error budget calculated in the DevOps/SRE culture?
+
+An error budget is the difference between the SLO and 100% availability.
+
+An error budget is the difference between the SLO and the SLA.
+
+An error budget is the difference between the SLO and the SLI.
+
+An error budget is the difference between the SLA and 100% availability.
+Navigation Bar
+In the DevOps/SRE (Site Reliability Engineering) culture, an error budget is calculated as the difference between the service level objective (SLO) and the service level indicator (SLI).
+
+The SLO is a target for the reliability of a service over a specific period, expressed in terms of a measurable quantity, such as uptime, response time, or error rate.
+
+The SLI is a measurement of how well a service is meeting its SLO, usually expressed as a percentage.
+
+The error budget is the amount of allowable errors or downtime that can occur while still meeting the SLO. This calculation enables DevOps and SRE teams to balance the need for innovation and feature development with the need to maintain the reliability and stability of the service.
+
+
+
+
+
+Emmanuel Anyira
+4
+An engineer has just created a backup file of a Cisco VIRL network simulation. Which command should be used to compare the most recent .virl file with the previous backup file?
+
+source
+
+knife
+
+diff
+
+list
+
+pyats
+The command that should be used to compare the most recent .virl file with the previous backup file is "diff". The "diff" command is a Unix/Linux command that is used to compare two files line by line and display the differences between them.
+
+Assuming that the engineer has saved the most recent .virl file as "network_simulation_new.virl" and the previous backup file as "network_simulation_old.virl", the following command can be used to compare the two files:
+
+Copy code
+diff network_simulation_new.virl network_simulation_old.virl
+This command will display the differences between the two files and help the engineer identify any changes made to the network simulation.
+
+
+
+
+
+Emmanuel Anyira
+5
+Which statement describes the declarative static model?
+
+A declarative model will execute code that is sequentially task-driven instead of focusing on deployment-specific details.
+
+A declarative model will subdivide code into top-down sections and condition-driven handlers.
+
+A declarative model will examine present circumstances and bring real infrastructure into alignment in order to reach a desired state.
+
+A declarative model will follow a specific order of sequential steps in order to effect changes on a target system.
+Navigation Bar
+The statement that describes the declarative static model is:
+
+"A declarative model will examine present circumstances and bring real infrastructure into alignment in order to reach a desired state."
+
+The declarative model is a type of approach used in infrastructure as code, where the desired state of the infrastructure is specified in a declarative language such as YAML or JSON. The declarative model focuses on the end state that needs to be achieved, rather than the sequential steps required to get there.
+
+The declarative model uses a desired state configuration that specifies the desired settings and configuration for the infrastructure. The infrastructure as code tool will then examine the present state of the infrastructure and apply any necessary changes to bring it into alignment with the desired state.
+
+This approach allows for more consistent, reliable, and reproducible infrastructure deployments, as well as easier management and scaling of infrastructure.
+
+
+
+
+
+Emmanuel Anyira
+6
+While working in the Ansible code structure, which type of file contains a sequence of tasks, executed in top-down order?
+
+.yml
+
+.virl
+
+.txt
+
+.py
+In the Ansible code structure, the type of file that contains a sequence of tasks, executed in top-down order, is a YAML file with a ".yml" extension.
+
+Ansible is a popular infrastructure automation tool that uses YAML files to define tasks and configurations. YAML is a human-readable data serialization language that is commonly used in configuration files, and Ansible uses it extensively to define tasks and configurations in its playbooks.
+
+Each task in an Ansible playbook is defined as a YAML dictionary with a set of key-value pairs, including the name of the task and the specific action to perform. Playbooks are executed in a top-down order, meaning that tasks are executed in the order in which they are defined in the playbook.
+
+
+
+
+
+Emmanuel Anyira
+7
+What is the historical correlation between software developers and IT operations?
+
+Operations had the job of brainstorming applications. Developers had the job of testing that these applications work for users and the business.
+
+Developers had the job of creating applications. Operations had the job of verifying that these applications work for users.
+
+Developers had the job of testing applications. Operations had the job of implementing these applications for clients.
+
+Operations had the job of testing applications. Developers had the job of implementing these applications for clients.
+Navigation Bar
+Historically, software developers and IT operations had a siloed approach, where developers were responsible for creating applications and IT operations were responsible for implementing and maintaining the infrastructure needed to run those applications. This approach led to a lack of collaboration and communication between the two groups, which often resulted in delays, errors, and inefficiencies.
+
+In this context, the statement that best describes the historical correlation between software developers and IT operations is:
+
+"Developers had the job of creating applications. Operations had the job of verifying that these applications work for users."
+
+This approach is often referred to as the "throw it over the wall" approach, where developers would throw their code over to operations, who would then try to implement and maintain it without any input or collaboration from the developers.
+
+However, with the rise of DevOps, there has been a significant shift in this approach, with a focus on collaboration and communication between development and operations teams. This has led to the emergence of practices such as infrastructure as code, continuous integration and deployment, and automated testing and monitoring, which aim to bridge the gap between development and operations and improve the overall quality and reliability of software delivery.
+
+
+
+
+
+Emmanuel Anyira
+8
+In reviewing a formalized agreement between an organization and a customer, what is the purpose of an SLI?
+
+An SLI is a benchmark metric used to determine and describe SLOs.
+
+An SLI is an agreed-upon number of errors per unit time.
+
+An SLI is an easy to complete, external agreement that is set between the organization and the customer.
+
+An SLI is a specific set of steps for slowing releases as errors occur.
+Navigation Bar
+In reviewing a formalized agreement between an organization and a customer, the purpose of an SLI is to serve as a benchmark metric used to determine and describe SLOs.
+
+An SLI (Service Level Indicator) is a metric used to measure the performance of a service, such as availability, latency, or error rates. SLIs are used to define specific targets for service performance, known as Service Level Objectives (SLOs), which are formalized agreements between an organization and its customers.
+
+An SLI can be thought of as a key performance indicator (KPI) for a service, and it is used to monitor the performance of the service against the agreed-upon SLOs. By tracking SLIs and SLOs, organizations can gain insights into the overall health and reliability of their services and make data-driven decisions about how to improve them.
+
+
+
+
+
+Emmanuel Anyira
+9
+In the use of container technologies, what is a function of platform abstraction when considering the deployment of a product in a cloud environment?
+
+Applications require re-engineering in order to implement scalability and consolidation.
+
+Applications are aware of underlying hardware configurations and are customized to provide increased functionality.
+
+A containerized app can run on a generically-specified host environment.
+
+Traditional complementary software components such as a database server and web server would be implemented as a single containerized application.
+In the use of container technologies, the function of platform abstraction when considering the deployment of a product in a cloud environment is that a containerized app can run on a generically-specified host environment.
+
+Platform abstraction refers to the ability of containerization technologies to abstract away the underlying host environment and provide a consistent, standardized platform for running applications. This allows developers to build and deploy containerized applications on any cloud or infrastructure platform that supports containerization, without having to worry about the specifics of the underlying hardware or operating system.
+
+This platform abstraction makes it easier to deploy and scale applications in the cloud, as developers can focus on building and testing their applications without having to worry about the nuances of the underlying infrastructure. Additionally, it allows for greater flexibility in terms of deployment and scaling, as containerized applications can be easily moved between different cloud environments or infrastructure platforms.
+
+
+
+
+
+Emmanuel Anyira
+11
+What is a standard command to create a Python virtual environment?
+
+pip install [options] [package-index-options] ...
+
+python3 -m venv /path/to/new/virtual/environment
+
+source bin/activate
+
+sudo apt-get install python3-pip
+Navigation Bar
+The standard command to create a Python virtual environment is python3 -m venv /path/to/new/virtual/environment.
+
+This command creates a new virtual environment in the specified directory (/path/to/new/virtual/environment) using the Python 3 interpreter. Once the virtual environment is created, you can activate it using the source bin/activate command (assuming you are using a Unix-like operating system).
+
+The pip install [options] [package-index-options] ... command is used to install packages within the virtual environment once it is activated. The sudo apt-get install python3-pip command installs the pip package manager for Python 3 on Debian-based Linux distributions.
+
+
+
+
+
+Emmanuel Anyira
+12
+What is the most common cause of IT outages?
+
+an experienced engineer using an open source product
+
+an engineer misconfiguring a device or network with manual changes
+
+a threat actor targeting the enterprise equipment
+
+an experienced engineer implementing a configuration using automation
+Navigation Bar
+The most common cause of IT outages is an engineer misconfiguring a device or network with manual changes.
+
+Despite the increasing use of automation and advanced technology in IT, human error remains a significant cause of IT outages. Misconfigurations can occur due to a variety of factors, including lack of knowledge, insufficient documentation, and oversight. These errors can have a significant impact on an organization's operations and can lead to costly downtime, lost productivity, and damage to reputation.
+
+While the other options listed may also contribute to IT outages, they are less common than human error. For example, while threat actors can target enterprise equipment and cause outages, these incidents are typically the result of a successful attack rather than a common cause of IT outages. Similarly, experienced engineers using open source products or implementing configurations using automation are unlikely to cause outages on their own, although errors in these areas can certainly contribute to larger issues.
+
+
+
+
+
+Emmanuel Anyira
+13
+A student is setting up the DEVASC-LAB VM and CSR1000v VM in VirtualBox that is installed on the local computer. Both VMs are imported to the VirtualBox successfully. The student starts both VMs and tries to verify communications to the CSR1000v VM by opening a web browser on the local computer and enters the URL https://192.168.56.101. After a few seconds, an error message displays that “The connection has timed out”. How can the student verify the IP address assigned by DHCP to the CSR1000v virtual router?
+
+Issue the ifconfig command in the CSR1000v VM.
+
+Issue the show running-config command in the CSR1000v VM.
+
+Issue the show ip interface brief command in the CSR1000v VM.
+
+Issue the ping 192.168.56.101 command on the local computer.
+Navigation Bar
+The student can verify the IP address assigned by DHCP to the CSR1000v virtual router by issuing the "show ip interface brief" command in the CSR1000v VM. This command will display the IP address assigned to the interface.
+
+
+
+
+
+Emmanuel Anyira
+14
+What is an unopinionated component in a software ecosystem?
+
+a component that is classified as open source and does not require the implementation of specific vendor products
+
+a component that requires a specific companion component in order to provide full stack implementation
+
+a component that may function in a limited ability in order to compensate for the selection of companion components or architectures
+
+a component that does not show an increased preference for specific companion components or architectures unless those components or architectures are necessary
+An unopinionated component in a software ecosystem is a component that does not show an increased preference for specific companion components or architectures unless those components or architectures are necessary. It is a component that allows the developer or user to have more freedom and flexibility in choosing and combining other components or architectures to create a solution.
+
+
+
+
+
+Emmanuel Anyira
+15
+Which type of automation includes scripting that may be dangerous if the starting state is not completely known and controlled?
+
+procedural
+
+stateful
+
+stateless
+
+declarative
+Navigation Bar
+Stateful automation may include scripting that may be dangerous if the starting state is not completely known and controlled.
+
+
+
+
+
+Emmanuel Anyira
+16
+Which component in the pyATS ecology handles bundling and running jobs?
+
+Genie
+
+Clover
+
+EasyPy
+
+AEtest
+The component in the pyATS ecology that handles bundling and running jobs is AEtest.
