@@ -1,0 +1,370 @@
+1
+In software development, what is the purpose of a jump box?
+
+to filter packets based on Layer 3 and Layer 4 addressing
+
+to receive incoming requests and forward them to multiple servers
+
+to act as a single trusted machine used to launch connections to sensitive systems
+
+to make all requests originating from within a network look like they come from the same source IP address
+In software development, a jump box is a secure computer that serves as a single point of entry for administrators to connect to other servers or devices within a network. Its purpose is to act as a single trusted machine used to launch connections to sensitive systems.
+
+The jump box provides a secure way to access servers and devices that are not directly accessible from the internet or other unsecured networks. By connecting to the jump box first, administrators can establish a secure connection to other servers and devices within the network without exposing them to potential security threats.
+
+The use of a jump box can also help with auditing and access control by providing a centralized point of entry that can be monitored and controlled more easily than allowing direct access to multiple servers and devices.
+
+
+
+
+
+Emmanuel Anyira
+2
+Which attack involves the insertion of malicious code into SQL statements?
+
+SQL injection
+
+brute force
+
+cross-site scripting
+
+local file inclusion
+The attack that involves the insertion of malicious code into SQL statements is called SQL injection. This type of attack is a common technique used by attackers to exploit vulnerabilities in web applications that interact with a database.
+
+In a SQL injection attack, an attacker manipulates input data to inject malicious SQL code into a web application's SQL statement. This can allow the attacker to view, modify, or delete sensitive data from the database or even take control of the entire system.
+
+To prevent SQL injection attacks, web developers should use parameterized queries, validate and sanitize user input, and restrict database user privileges. Regular security audits and vulnerability scans can also help identify and mitigate potential SQL injection vulnerabilities.
+
+
+
+
+
+Emmanuel Anyira
+3
+Which mitigation method is effective against cross-site scripting?
+
+sanitizing untrusted content
+
+requiring multifactor authentication
+
+consistent hardening of systems and applications
+
+using only necessary features and secure packages downloaded from official sources and verified with a signature
+The mitigation method that is effective against cross-site scripting is sanitizing untrusted content. Cross-site scripting (XSS) is a type of web vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. This can allow attackers to steal sensitive information, such as login credentials or session cookies, from other users.
+
+To prevent XSS attacks, web developers should sanitize any user input or untrusted content, such as form data, query parameters, and cookies, to remove any potentially malicious code. This can be done by encoding special characters, such as < and >, or by validating input against a whitelist of allowed characters.
+
+Other mitigation methods that can help prevent XSS attacks include implementing Content Security Policy (CSP) headers to restrict the sources of content that a web page can load, using HTTP-only cookies to prevent script access to session cookies, and implementing proper input validation and output encoding techniques.
+
+Requiring multifactor authentication, consistent hardening of systems and applications, and using only necessary features and secure packages downloaded from official sources and verified with a signature are important security measures, but they are not specifically effective against XSS attacks.
+
+
+
+
+
+Emmanuel Anyira
+4
+Which statement is a characteristic of the broken access control threat to web applications?
+
+It allows an attacker to use the dynamic functions of a site to inject malicious content into the page.
+
+It allows attackers to steal sensitive information such as passwords or personal information.
+
+It allows users to circumvent existing authentication requirements.
+
+It allows attackers to access, and potentially change, serialized versions of data and objects.
+Navigation Bar
+The statement that is a characteristic of the broken access control threat to web applications is: "It allows users to circumvent existing authentication requirements."
+
+Broken access control is a type of web application vulnerability that occurs when a web application fails to properly enforce restrictions on what authenticated users are allowed to do. This can allow users to access functionality or data that they are not authorized to access.
+
+Examples of broken access control vulnerabilities include insecure direct object references, where an attacker can access or modify an object by changing a parameter value, and vertical privilege escalation, where an attacker can elevate their privileges to access data or functionality that they are not authorized to access.
+
+To prevent broken access control vulnerabilities, web developers should implement proper access controls, such as role-based access control (RBAC) and attribute-based access control (ABAC), and enforce least privilege principles to ensure that users only have access to the resources and functionality that they need to perform their tasks. Regular security testing and code reviews can also help identify and remediate potential broken access control vulnerabilities.
+
+
+
+
+
+Emmanuel Anyira
+5
+What is a characteristic of a virtual machine running on a PC?
+
+The number of virtual machines that can be made available depends on the software resources of the host machine.
+
+A virtual machine runs its own operating system.
+
+A virtual machine needs a physical network adapter to connect to the Internet.
+
+A virtual machine is not susceptible to threats and malicious attacks.
+A characteristic of a virtual machine running on a PC is that it runs its own operating system.
+
+A virtual machine is a software environment that emulates a complete hardware system, allowing multiple operating systems to run on a single physical machine. Each virtual machine has its own virtual hardware, including virtual CPUs, memory, storage, and network adapters.
+
+Because each virtual machine runs its own operating system, multiple applications or services can be run simultaneously on a single physical machine, without interfering with each other.
+
+The number of virtual machines that can be made available depends on the software resources of the host machine. The host machine must have enough processing power, memory, and storage to accommodate the additional virtual machines.
+
+A virtual machine does not necessarily need a physical network adapter to connect to the Internet, as it can use the host machine's network connection or a virtual network adapter. However, it does require a network connection to communicate with other machines or services.
+
+While virtual machines provide some level of isolation and security, they are not immune to threats and malicious attacks. Security measures, such as network firewalls, antivirus software, and proper configuration and hardening, should still be implemented to protect both the host machine and the virtual machines.
+
+
+
+
+
+Emmanuel Anyira
+6
+Which technology is used to containerize applications and allows them to run in a variety of environments?
+
+Docker
+
+Cisco DNA
+
+GitHub
+
+VirtualBox
+The technology used to containerize applications and allows them to run in a variety of environments is Docker.
+
+Docker is a popular platform for containerizing and deploying applications. It allows developers to package their applications and dependencies into a container image, which can be deployed and run consistently across different environments, such as development, testing, and production.
+
+By containerizing applications, Docker provides several benefits, including improved portability, scalability, and consistency across different environments. Docker also allows for easy management and deployment of containerized applications, making it a popular choice for DevOps and cloud-based deployments.
+
+Cisco DNA is a network automation platform, GitHub is a web-based code hosting platform, and VirtualBox is a virtualization platform for running multiple operating systems on a single physical machine. While these technologies may be used in conjunction with Docker or containerization, they are not specifically designed for containerization and application deployment.
+
+
+
+
+
+Emmanuel Anyira
+Match the environments in the four-tier development environment structure to the description.
+
+i. Development
+ii. Testing
+iii. Staging
+iv. Production
+
+contains code that has been tested multiple times and is error free
+
+includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system
+
+where coding takes place
+
+structurally as close to the actual production environment as possible
+
+Navigation Bar
+The matching environments in the four-tier development environment structure to the descriptions are:
+
+i. Development - where coding takes place
+ii. Testing - includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system
+iii. Staging - structurally as close to the actual production environment as possible
+iv. Production - contains code that has been tested multiple times and is error-free, and is the live environment where the application is accessible by end-users.
+
+The development environment is where developers write and test their code before committing it to a version control system. In the testing environment, automated tools are used to test the application, including unit tests, integration tests, and end-to-end tests. The staging environment is a replica of the production environment, where the application can be tested in a realistic setting before it is released to production. The production environment is where the application is accessible to end-users and contains the final, tested version of the code.
+
+
+
+
+
+Emmanuel Anyira
+8
+To complete this activity, Match the cloud model to its description. (Not all options are used.)
+
+Match the cloud model to its description. (Not all options are used.)
+i. Public
+ii. Private
+iii. Hybrid
+iv. edge
+
+These are clouds that locate computing as close as possible to the user.
+
+These clouds are made up of two or more clouds. However, each part remains a distinctive and separate object. Both of these are connected using a single architecture.
+
+These are clouds that are intended for a specific organization or entity, such as the government. They can be set up using the private network of an organization.
+
+Navigation Bar
+The matching cloud models to their descriptions are:
+
+i. Public - These clouds are intended for general use by the public and are often managed by third-party providers. Examples include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform.
+
+ii. Hybrid - These clouds are made up of two or more clouds, typically a combination of public and private clouds. They allow organizations to take advantage of the benefits of both cloud models while maintaining some level of control over their data and infrastructure.
+
+iii. Private - These clouds are intended for a specific organization or entity and are typically hosted on-premises or in a dedicated data center. They provide greater control and security over data and infrastructure, but can be more expensive to set up and maintain.
+
+iv. Edge - These clouds locate computing as close as possible to the user, often at the edge of the network or on devices themselves. They are designed to reduce latency and improve performance for applications that require real-time processing, such as Internet of Things (IoT) devices and autonomous vehicles.
+
+
+
+
+
+Emmanuel Anyira
+9
+What is a philosophy for software deployment used in the field of DevOps?
+
+SOAP
+
+CI/CD
+
+OWASP
+
+DevNet
+Navigation Bar
+The philosophy for software deployment used in the field of DevOps is called CI/CD, which stands for Continuous Integration and Continuous Deployment (or Continuous Delivery).
+
+CI/CD is a software development practice that emphasizes frequent code changes and continuous testing and deployment of those changes. It involves automating the build, test, and deployment process to ensure that changes can be delivered to users quickly and with minimal risk of errors or downtime.
+
+SOAP (Simple Object Access Protocol) is a messaging protocol used in web services. OWASP (Open Web Application Security Project) is a non-profit organization that provides resources and guidance for web application security. DevNet is a community of developers who specialize in network programmability and automation.
+
+
+
+
+
+Emmanuel Anyira
+10
+Which security device is used to make responses to client requests look like they all come from the same server?
+
+jump box
+
+reverse proxy
+
+stateful firewall
+
+forward proxy
+The security device used to make responses to client requests look like they all come from the same server is a reverse proxy.
+
+A reverse proxy sits between the client and the web server, and forwards client requests to the appropriate server based on a variety of factors. When the server responds, the reverse proxy intercepts the response and returns it to the client as if it came from the proxy itself. This can be used to balance the load across multiple servers, improve security by hiding the details of the internal network, and make it easier to manage multiple servers as if they were a single entity.
+
+A jump box is a security device used to manage access to sensitive systems by acting as a single trusted machine from which connections can be launched. A forward proxy is used to forward requests from a client to a server, and can be used to improve security and privacy by hiding the client's identity. A stateful firewall is used to filter packets based on Layer 3 and Layer 4 addressing, and can be used to improve security by blocking unwanted traffic.
+
+
+
+
+
+Emmanuel Anyira
+11
+Option 1: Dependency Check. Press spacebar to enter matching mode.
+
+Match the OWASP resource with a description.
+i. Dependency check
+ii. 
+
+
+
+
+explains ways to mitigate command security issues in web applications
+
+looks for known vulnerabilities in code
+
+streamlines the code testing process
+
+generic attack detection rules used with web application firewalls
+
+I can see only one option provided. Here's the matching:
+
+i. Dependency check: looks for known vulnerabilities in code
+
+
+
+
+
+Emmanuel Anyira
+11
+Option 1: Dependency Check. Press spacebar to enter matching mode.
+
+Match the OWASP resource with a description.
+i. Dependency check
+ii. ModSecurity Core Rule Set
+iii. Cheat sheet series
+iv. DefectDojo
+
+
+
+explains ways to mitigate command security issues in web applications
+
+looks for known vulnerabilities in code
+
+streamlines the code testing process
+
+generic attack detection rules used with web application firewalls
+Here's the matching:
+
+i. Dependency check: looks for known vulnerabilities in code
+ii. ModSecurity Core Rule Set: generic attack detection rules used with web application firewalls
+iii. Cheat sheet series: explains ways to mitigate command security issues in web applications
+iv. DefectDojo: streamlines the code testing process
+
+
+
+
+
+Emmanuel Anyira
+12
+What is a characteristic of the blue-green upgrade deployment strategy?
+
+The new code is deployed all at once to the old environment. If users experience no issues, it is then moved to the new environment.
+
+The code changes are periodically rolled out in such a way that they do not impact current users.
+
+A new environment is created with the new code in it, while the old environment is held in reserve in case users experience problems.
+
+The new code version is first rolled out to a subset of users. Changes can then be rolled back if the users experience any problems.
+Navigation Bar
+The characteristic of the blue-green upgrade deployment strategy is:
+A new environment is created with the new code in it, while the old environment is held in reserve in case users experience problems.
+
+
+
+
+
+Emmanuel Anyira
+13
+Which technique is used to help mitigate SQL injection attacks?
+
+limiting the read access to specific fields of a table or joins of tables
+
+using the same owner or admin account in the web applications to connect to the database
+
+assigning DBA or admin access rights to the application account
+
+using stored procedures with the "db_owner" default role
+Using stored procedures is a technique that can help mitigate SQL injection attacks. By using stored procedures, the application can call a specific stored procedure with the necessary parameters, and the stored procedure itself can be written in such a way as to prevent SQL injection attacks. The "db_owner" default role is not directly related to mitigating SQL injection attacks, and assigning DBA or admin access rights to the application account is not recommended for security reasons. Similarly, using the same owner or admin account in the web applications to connect to the database is not a recommended practice, as it can make the system more vulnerable to attack. Finally, limiting the read access to specific fields of a table or joins of tables is a general security best practice, but it may not be effective in mitigating SQL injection attacks specifically.
+
+
+
+
+
+Emmanuel Anyira
+14
+What is used to isolate the different parts of a running container?
+
+control groups
+
+union file systems
+
+namespaces
+
+wrappers
+Navigation Bar
+Namespaces are used to isolate the different parts of a running container.
+
+
+
+
+
+Emmanuel Anyira
+15
+Which characters are used to separate batched SQL statements?
+
+semicolons ;
+
+pound signs #
+
+colons :
+
+parentheses ( )
+Navigation Bar
+The correct answer is semicolons ";" are used to separate batched SQL statements.
+
+
+
+
